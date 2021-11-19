@@ -1,0 +1,317 @@
+body{
+    margin: 0;
+    font-family: "SF Pro Text","Myriad Set Pro",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","SF Pro Icons","Apple Legacy Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav_back{
+    background: rgb(71, 71, 71);
+    width: 100%;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.up{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_back p{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    padding-left: 35px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+
+.right select{
+    width: 300px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    background: rgb(71, 71, 71);
+    outline: 0;
+    font-family: "SF Pro Text","Myriad Set Pro",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","SF Pro Icons","Apple Legacy Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    cursor: pointer;
+}
+
+.right button{
+    height: 40px;
+    width: 100px;
+    margin-left: 25px;
+    background: #0077ED;
+    color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    border: 0;
+    cursor: pointer;
+}
+
+.right button:hover{
+    background: #2c7bca;
+}
+
+.right i{
+    color:  rgba(255,255,255,0.56) ;
+    font-size: 20px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+
+.down{
+    display: flex;
+    margin-top: 12px;
+    width: 80%;
+    padding: 10px 10%;
+    justify-content: space-evenly;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo li{
+    display: flex;
+    align-items: center;
+}
+
+.logo li img{
+    width: 25px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list li a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 13px;
+    transition: 0.5s;
+    color: rgb(165, 165, 165);
+}
+
+.list li a:hover{
+    color: white;
+}
+
+.icon_list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+}
+
+.icon_list li {
+    color: rgba(255,255,255,0.56);
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icon_list li:hover{
+    color: white;
+}
+
+/* main */
+
+.pro_13{
+    width: 100%;
+    margin: auto;
+    border-bottom: 10px solid white;
+    margin-top: 150px;
+}
+
+.pro_13 h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+.pro_13 p{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.pro_13 li{
+    list-style: none;
+    color: #0077ED;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.phone_img {
+    display: flex;
+    justify-content: center;
+}
+
+.phone_img img{
+    object-position: top;
+    object-fit: cover;
+    width: 450px;
+    height: 40vh;
+    margin-top: 50px;
+}
+
+.phone_13{
+    background: #382e52;
+    padding: 0 5%;
+}
+
+
+.phone_13 h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+
+.phone_13 p{
+    color: #fec2eb;
+    text-align: center;
+    margin: 0%;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.phone_13 li{
+    list-style: none;
+    padding-top: 10px;
+    color: #399cff;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.iPhone{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.iPhone img{
+    object-position: top;
+    object-fit: cover;
+    width: 450px;
+    height: 60vh;
+    margin-top: 50px;
+}
+
+
+footer{
+    margin-top: 25px;
+}
+
+footer h3{
+    display: flex;
+    justify-content: center;
+}
+
+
+.block{
+    display: flex;
+    display: none;
+    justify-content: space-evenly;
+}
+
+.block p{
+    display: flex;
+    align-items: center;
+}
+
+.block i{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width:768px) {
+    .up{
+        display: none;
+    }
+    .down{
+        display: none;
+    }
+    .block{
+        display: block;
+        display: flex;
+    }
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .list li a{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .pro_13{
+        margin-top: 80px;
+    }
+    .block{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .block p{
+        font-size: 9px;
+    }
+    .phone_img img{
+        width: 250px;
+    }
+    .iPhone img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .block p{
+        font-size: 8px;
+    }
+    .block i{
+        font-size: 15px;
+    }
+    .pro_13 h1{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .block p{
+        font-size: 7px;
+    }
+    .phone_13{
+        padding: 0 5%;
+    }
+}
